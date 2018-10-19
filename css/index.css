@@ -1,0 +1,19 @@
+#postDiv{
+
+}
+#newDiv{
+  display:none;
+}
+#editDiv{
+  display:none;
+}
+
+.input-field{
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.postDate{
+  font-size: 1.2em;
+  font-weight:400;
+}
