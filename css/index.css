@@ -1,5 +1,6 @@
 #postDiv{
-
+  margin-top:20px;
+  padding-top:20px;
 }
 #newDiv{
   display:none;
@@ -16,4 +17,17 @@
 .postDate{
   font-size: 1.2em;
   font-weight:400;
+  padding-left:20px;
+  padding-top:0px;
+}
+
+.post{
+  border: 1px solid grey;
+  padding:20px;
+  padding-top: 0px;
+  margin-top:5px
+}
+h2{
+  padding:0;
+  margin:0;
 }
