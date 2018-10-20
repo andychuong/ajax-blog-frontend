@@ -10,9 +10,14 @@
   <script src="js/index.js" charset="utf-8"></script>
   <!-- Posts -->
   <script src="js/showPosts.js" charset="utf-8"></script>
+  <!-- New -->
+  <script src="js/new.js" charset="utf-8"></script>
+  <!-- Edit -->
+  <script src="js/edit.js" charset="utf-8"></script>
   <!-- Materialize -->
   <link rel="stylesheet" href="css/materialize.css">
   <script src="js/materialize.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- AXIOS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 
@@ -36,18 +41,25 @@
     </div>
     <div class="" id="newDiv">
       <h2>New Blog Post</h2>
-      <form id="create-post">
+      <form id="createPost">
         <label for="title">Title</label>
         <input type="text" name="title" id="title">
-        <label for="contentes">Contents</label>
-        <div class="input-field">
-          <textarea id="contents" class="materialize-textarea"></textarea>
-        </div>
+        <label for="content">Contents</label>
+        <input type="text" name="content" id="content">
         <input type="submit" value="Submit" id="submit-form">
       </form>
       <br><br>
     </div>
     <div class="" id="editDiv">
+      <h2>Edit Blog Post</h2>
+      <form id="editPost">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="editTitle">
+        <label for="content">Contents</label>
+        <input type="text" name="content" id="editContent">
+        <input type="submit" value="Submit" id="submit-form">
+      </form>
+      <br><br>
 
     </div>
 

@@ -22,7 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
     showNew()
   })
 
-
+  // Edit
+  let editCollection = document.getElementsByClassName('editButton')
+  console.log(editCollection)
+  let editButtons = [...editCollection];
+  console.log(editButtons)
+  for (var i = 0; i < editButtons.length; i++) {
+    console.log(editButtons[i])
+    editButtons[i].addEventListener('click', (ev) => {
+        ev.preventDefault()
+        showEdit()
+      })
+  }
+  // editButtons.forEach( (ele) => {
+  //   ele.addEventListener('click', (ev) => {
+  //     ev.preventDefault()
+  //     showEdit()
+  //   })
+  // })
 
 })
 
@@ -36,4 +53,11 @@ function showNew(){
   postsDiv.setAttribute("style", "display:none");
   newDiv.setAttribute("style", "display:inline");
   editDiv.setAttribute("style", "display:none");
+}
+
+function showEdit(){
+  postsDiv.setAttribute("style", "display:none");
+  newDiv.setAttribute("style", "display:none");
+  editDiv.setAttribute("style", "display:inline ");
+  console.log('show edit')
 }
